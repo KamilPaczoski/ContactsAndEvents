@@ -1,6 +1,6 @@
 package paczwierz.eventcallendar.model;
 
-public class ContactModel {
+public class Contact {
     private int id;
     private String name;
     private String surname;
@@ -8,7 +8,7 @@ public class ContactModel {
     private String phone;
     private String category;
 
-    public ContactModel(int id, String name, String surname, String email, String phone, String category) {
+    public Contact(int id, String name, String surname, String email, String phone, String category) {
         this.id = id;
         this.name = name;
         this.surname = surname;

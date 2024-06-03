@@ -12,7 +12,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) {
         try {
-            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/HomeView.fxml")));
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("view/HomeView.fxml")));
             Scene scene = new Scene(root);
             stage.setTitle("Contact and Event Manager");
             stage.setScene(scene);
