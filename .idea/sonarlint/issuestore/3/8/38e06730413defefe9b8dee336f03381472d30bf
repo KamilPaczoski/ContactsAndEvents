@@ -1,0 +1,13 @@
+
+
+java:S4144,"ZUpdate this method so that its implementation is not identical to "goToEvents" on line 20.(—­À¸8É×úöı1J$d26fa092-dd88-453b-8674-a94e042c3334
+€
+java:S1117"8Rename "root" which hides the field declared at line 17.(ú§œÁúÿÿÿÿ8Ÿİ¹öı1J$38e16462-5357-4c0b-8668-df2fe6aeef50
+{
+java:S1117"8Rename "root" which hides the field declared at line 17.(½ùÏ±8¨İ¹öı1J$fb98f7d5-d6fb-44e8-82b8-388fbe8e5c5f
+€
+java:S1117%"8Rename "root" which hides the field declared at line 17.(Ãµ…•şÿÿÿÿ8ªİ¹öı1J$624f4dc7-c2e4-4675-9db0-cdd19a08edb1
+€
+java:S1117-"8Rename "root" which hides the field declared at line 17.(ú§œÁúÿÿÿÿ8¬İ¹öı1J$16477545-9f77-4229-87cf-4b963b28cf1a
+p
+java:S1068"(Remove this unused "root" private field.(Ğ´”ğûÿÿÿÿ8®İ¹öı1J$e5a5dd5a-4dbc-4a4f-bff5-2d735bc9320c
