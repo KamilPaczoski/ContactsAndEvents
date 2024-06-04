@@ -10,7 +10,10 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class CallendarController {
+/**
+ This class is the controller for the Calendar view in ours application.
+ */
+public class CalendarController {
 
     private Stage stage;
     private Scene scene;

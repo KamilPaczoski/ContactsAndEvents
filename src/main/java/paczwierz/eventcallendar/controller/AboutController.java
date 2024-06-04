@@ -10,6 +10,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
+/**
+ This class is the controller for the About view in ours application.
+ */
 public class AboutController {
 
     private Parent root;

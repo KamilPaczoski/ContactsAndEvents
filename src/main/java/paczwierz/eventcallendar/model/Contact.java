@@ -5,6 +5,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
+/**
+ * Represents a contact with fields for id, name, surname, email, phone, category, and shoesize.
+ */
+
 @Entity
 public class Contact {
 
@@ -16,10 +21,12 @@ public class Contact {
     private String email;
     private String phone;
     private String category;
+    private int shoesize;
 
     // Constructors, Getters, and Setters
     public Contact() {
     }
+
 
     public Contact(Long id, String name, String surname, String email, String phone, String category) {
         this.id = id;
@@ -28,6 +35,7 @@ public class Contact {
         this.email = email;
         this.phone = phone;
         this.category = category;
+        this.shoesize = shoesize;
     }
 
     // Getters
@@ -52,6 +60,8 @@ public class Contact {
     }
 
     public String getCategory() { return category; }
+
+    public int getShoesize() { return shoesize; }
     // Setters
     public void setId(Long id) { this.id = id; }
     public void setName(String name) {
@@ -73,4 +83,6 @@ public class Contact {
     public void setCategory(String category) {
         this.category = category;
     }
+
+    public void setShoesize(int shoesize) { this.shoesize = shoesize; }
 }

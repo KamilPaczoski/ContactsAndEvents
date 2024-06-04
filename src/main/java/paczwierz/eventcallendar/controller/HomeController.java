@@ -10,6 +10,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
+/**
+ This class is the controller for the starting page view in ours application.
+ */
 public class HomeController {
 
     private Stage stage;
@@ -42,7 +45,7 @@ public class HomeController {
     }
 
     public void goToCallendar(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/paczwierz/eventcallendar/view/CallendarView.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/paczwierz/eventcallendar/view/CalendarView.fxml")));
         stage = ((Stage) ((Node) event.getSource()).getScene().getWindow());
         scene = new Scene(root);
         stage.setScene(scene);

@@ -40,7 +40,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paczwierz.eventcallendar.controller.ContactsController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="paczwierz.eventcallendar.controller.ContactsController">
     <children>
         <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
             <children>
@@ -48,27 +49,32 @@
                     <items>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="318.0" prefWidth="131.0">
                             <children>
-                                <ListView editable="true" prefHeight="319.0" prefWidth="187.0" />
+                                <ListView editable="true" prefHeight="319.0" prefWidth="187.0"/>
                             </children>
                         </AnchorPane>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="324.0" prefWidth="448.0">
                             <children>
-                                <ChoiceBox layoutX="14.0" layoutY="279.0" prefHeight="26.0" prefWidth="149.0" />
-                                <TextField layoutX="14.0" layoutY="15.0" promptText="ID" />
-                                <TextField layoutX="14.0" layoutY="56.0" promptText="Name" />
-                                <TextField layoutX="14.0" layoutY="99.0" promptText="Surname" />
-                                <TextField layoutX="14.0" layoutY="147.0" promptText="Shoe size" />
-                                <TextField layoutX="14.0" layoutY="192.0" promptText="Email" />
-                                <TextField layoutX="14.0" layoutY="235.0" promptText="Phone number" />
-                                <ListView layoutX="233.0" layoutY="15.0" prefHeight="246.0" prefWidth="200.0" />
+                                <ChoiceBox fx:id="category" layoutX="14.0" layoutY="279.0" prefHeight="26.0"
+                                           prefWidth="160.0"/>
+                                <TextField fx:id="id" layoutX="14.0" layoutY="15.0" promptText="ID"/>
+                                <TextField fx:id="name" layoutX="14.0" layoutY="56.0" promptText="Name"/>
+                                <TextField fx:id="surname" layoutX="14.0" layoutY="99.0" promptText="Surname"/>
+                                <TextField fx:id="shoesize" layoutX="14.0" layoutY="147.0" promptText="Shoe size"/>
+                                <TextField fx:id="email" layoutX="14.0" layoutY="192.0" promptText="Email"/>
+                                <TextField fx:id="phone" layoutX="14.0" layoutY="235.0" promptText="Phone number"/>
+                                <ListView layoutX="233.0" layoutY="15.0" prefHeight="290.0" prefWidth="200.0"/>
                             </children>
                         </AnchorPane>
                     </items>
                 </SplitPane>
-                <Button layoutX="23.0" layoutY="345.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="113.0" text="Add" />
-                <Button layoutX="182.0" layoutY="345.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="113.0" text="Save" />
-                <Button layoutX="351.0" layoutY="345.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="113.0" text="Delete" />
-                <Button layoutX="488.0" layoutY="347.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="25.0" prefWidth="113.0" text="Return" />
+                <Button layoutX="23.0" layoutY="345.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="113.0"
+                        text="Add" onAction="#addContact"/>
+                <Button layoutX="182.0" layoutY="345.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="113.0"
+                        text="Save" onAction="#saveContact"/>
+                <Button layoutX="350.0" layoutY="345.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="113.0"
+                        text="Delete" onAction="#deleteContact"/>
+                <Button layoutX="508.0" layoutY="345.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="25.0"
+                        prefWidth="113.0" text="Return"/>
             </children>
         </AnchorPane>
     </children>
