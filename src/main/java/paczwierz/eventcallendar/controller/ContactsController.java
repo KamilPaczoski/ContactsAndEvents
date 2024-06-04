@@ -9,14 +9,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import paczwierz.eventcallendar.model.Contact;
 
 import java.io.IOException;
 import java.util.Objects;
 
 public class ContactsController {
 
-    @FXML
-    private TextField id;
     @FXML
     private TextField name;
     @FXML
@@ -25,6 +24,8 @@ public class ContactsController {
     private TextField email;
     @FXML
     private TextField phone;
+    @FXML
+    private TextField category; //todo edit form textfield to box
     @FXML
     private Button saveButton;
     @FXML
@@ -39,6 +40,9 @@ public class ContactsController {
             String surnameText = surname.getText();
             String emailText = email.getText();
             String phoneText = phone.getText();
+            String categoryText = category.getText();
+
+            Contact contact = new Contact( null ,nameText, surnameText, emailText, phoneText, categoryText);
         } catch (Exception e) {
             System.out.println(e);
         }

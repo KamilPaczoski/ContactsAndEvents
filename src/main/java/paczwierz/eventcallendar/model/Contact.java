@@ -1,14 +1,27 @@
 package paczwierz.eventcallendar.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Contact {
-    private int id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String name;
     private String surname;
     private String email;
     private String phone;
     private String category;
 
-    public Contact(int id, String name, String surname, String email, String phone, String category) {
+    // Constructors, Getters, and Setters
+    public Contact() {
+    }
+
+    public Contact(Long id, String name, String surname, String email, String phone, String category) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -18,7 +31,7 @@ public class Contact {
     }
 
     // Getters
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
@@ -38,15 +51,9 @@ public class Contact {
         return phone;
     }
 
-    public String getCategory() {
-        return category;
-    }
-
+    public String getCategory() { return category; }
     // Setters
-    public void setId(int id) {
-        this.id = id;
-    }
-
+    public void setId(Long id) { this.id = id; }
     public void setName(String name) {
         this.name = name;
     }
